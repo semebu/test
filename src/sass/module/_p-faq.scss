@@ -1,0 +1,44 @@
+@use "global" as *;
+
+
+
+.p-faq {
+  // background: linear-gradient(180deg, #275698 0%, #1A3965 29.5%, #7C828B 69.5%);
+  background-image: url(../images/common/faq-pc.png);
+  background-size: cover;
+  padding-inline: 61px;
+  padding-block: 61px 204px;
+
+  @include mq("lg") {
+    background-image: url(../images/common/faq-sp.png);
+    padding-inline: 41px;
+    padding-block: 61px 230px;
+  }
+}
+
+.p-faq__inner {
+    // background-color: $white;
+    background-color: transparent;
+    max-width: 1120px;
+    margin-inline: auto;
+    // padding-inline: 66px;
+
+}
+
+.p-faq__boxes {
+  margin-top: 42px;
+  background-color: #FFFFFF;
+  padding-block: 106px;
+  padding-inline: 130px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.js-accordion {
+
+}
+
+.is-open {
+
+}

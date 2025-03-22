@@ -1,0 +1,7 @@
+@use "global" as *;
+
+.l-header__right-wrapper {
+  display: flex;
+  align-items: center;
+  padding-right: 64px;
+}

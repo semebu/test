@@ -1,0 +1,303 @@
+@use "global" as *;
+
+
+input[type=text],
+input[type=email],
+input[type=tel],
+select,
+textarea {
+  border-radius: 0;
+  width: 100%;
+  border: 1px solid $black;
+  padding-block: 15px;
+  padding-inline: 24px;
+  font-family: $black;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
+
+  @include mq(lg) {
+    margin-top: 18px;
+  }
+
+
+  &::placeholder {
+   color: #5a5a5a;
+  }
+}
+// デフォルトのチエックを消す
+input[type=checkbox] {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  clip: rect(0 0 0 0);
+}
+
+// テキストエリア
+textarea {
+  height: 450px;
+  resize: vertical;
+}
+//チェックボックスカスタマイズ ====================
+//チェックされた時の挙動
+input[type=checkbox]:checked + span {
+  &::after {
+    opacity: 1;
+  }
+}
+
+.p-contact {
+background: $white;
+padding-block: 159px;
+}
+
+.p-contact__inner {
+width: min(calc(832px + 20px * 2), 100%);
+padding-inline: 20px;
+margin-inline: auto;
+}
+
+.p-contact__description {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.p-contact__description-text {
+  color:$black;
+/* pc/mane-titlename-sub */
+font-family: $base-font-family;
+font-size: 16px;
+font-weight: 500;
+letter-spacing: 1.6px;
+
+@include mq(lg) {
+  color: var(--main, #262626);
+
+/* pc/copyright */
+font-size: 12px;
+letter-spacing: 1.2px;
+}
+
+}
+
+.p-contact__form {
+  margin-top: 89px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+.p-contact__row {
+  display: grid;
+  grid-template-columns: 128px 1fr;
+  column-gap: 64px;
+  align-items: center;
+
+  @include mq(lg) {
+    grid-template-columns: 1fr;
+  }
+
+  &.--aifs {
+    align-items: flex-start;
+  }
+}
+
+.p-contact__head {
+  color: #000;
+  font-family: $black;
+  font-size: 16px;
+  font-weight: 400;
+
+  @include mq(lg) {
+    color: #000;
+    font-family: "Noto Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+
+span.--must {
+  position: relative;
+  display: inline-block;
+
+  &::after {
+    content: "(必須)";
+    position: absolute;
+    top: calc(50% + 1px);
+    translate: 0 -50%;
+    left: calc(100% + 14px);
+    font-size: 12px;
+    line-height: normal;
+    display: inline-block;
+    padding: 1px 7px;
+    border-radius: 4px;
+    white-space: nowrap;
+    color: red;
+  }
+}
+
+.p-contact__data {
+
+}
+
+
+//カスタマイズ
+
+.p-contact__data-checkbox {
+  //全体のcss
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 13px 10px;
+  max-width: 1120px;
+  margin-inline: auto;
+
+
+// 各項目のCSS
+span {
+  margin-top: 27px;
+  display: inline-block;
+  font-size: 16px;
+  line-height: normal;
+  padding-left: 30px;
+
+  position: relative;
+  // frame {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 2.5px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border: 1px solid $black;
+  }
+
+  // active
+  &::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 6px;
+    width: 6px;
+    height: 12px;
+    border-right: 2px solid $black;
+    border-bottom: 2px solid $black;
+    transform: rotate(45deg);
+   opacity: 0;
+   transition: opacity 0.3s ease-in-out;
+  }
+}
+}
+
+.p-contact__data-checkbox-inner {
+  
+}
+
+.p-contact__select-wrap {
+
+}
+
+.--aifs {
+
+}
+
+.p-contact__acceptance-wrapper {
+  padding-inline: 20px;
+}
+
+.p-contact__acceptance {
+  margin-top: 89px;
+  grid-template-columns: 1fr;
+  text-align: center;
+  padding-block: 56px;
+  border-radius: 5px;
+  background: rgba(45, 182, 255, 0.1); // 透明度を持つ背景色に変更
+}
+
+
+
+.p-contact__acceptance-title {
+  color: $black-base;
+  text-align: center;
+  /* Text */
+  font-family: $base-font-family;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 140%; /* 33.6px */
+}
+
+.p-contact__acceptance-text {
+  margin-top: 27px;
+  color: #000;
+  text-align: center;
+  font-family: $base-font-family;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%; /* 25.2px */
+
+    a {
+    color: #036EB8;
+    font-family: "Noto Sans JP";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 140%;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+
+  }
+}
+
+// ===================================
+// 送信ボタン
+// ===================================
+//ブラウザによって異なるデフォルト設定を初期化
+input[type="submit"],
+input[type="button"] {
+  border-radius: 0px;
+  -webkit-box-sizing: content-box;
+  -webkit-appearance: button;
+  appearance: button;
+  border: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  background: transparent;
+}
+input[type="submit"]::-webkit-search-decoration,
+input[type="button"]::-webkit-search-decoration {
+  display: none;
+}
+//ボタンを中央寄せに(ケースによる)
+.row.jc-center {
+  justify-content: center;
+}
+
+// 送信ボタンのカスタマイズ====================
+.p-contact__submit {
+  text-align: center;
+
+ 
+  input[type=submit] {
+    display: inline-block;
+    background:$black;
+    color: $white;
+    font-size: 16px;
+    line-height: normal;
+    padding: 15px 107px;
+    font-family: $base-font-family;
+    font-weight: 400;
+    transition: background 0.3s ease-in-out;
+     &:hover {
+    border: 0px solid $black;
+    background: linear-gradient(90deg, #3C577B 3.64%, #449D85 50%, #53B9DE 96.36%);
+  }
+  
+  }
+
+  
+}

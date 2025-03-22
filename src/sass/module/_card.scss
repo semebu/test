@@ -1,0 +1,23 @@
+@use "global" as *;
+
+.card {
+  position: relative;
+  z-index: 300;
+}
+
+.card__swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 240px;
+  height: auto;
+  aspect-ratio: 261 / 175;
+}
+
+.card__swiper-container + .card__swiper-container {
+  margin-top: 60px;
+}
+
+.card__swiper-wrapper {
+  transition-timing-function: linear;
+}

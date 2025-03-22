@@ -1,0 +1,11 @@
+@use "global" as *;
+
+.l-drawer-icon {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 64px;
+  height: 64px;
+  z-index: 102;
+  background-color: cyan;
+}

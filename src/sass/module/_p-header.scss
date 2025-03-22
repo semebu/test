@@ -1,0 +1,84 @@
+@use "global" as *;
+
+.p-header {
+ height: 64px;
+ background-color: $black;
+ z-index: 100;
+ position: fixed;
+ width: 100%;
+ z-index: 50;
+}
+
+.p-header__inner {
+  display: flex;
+  justify-content: space-between;
+  height: inherit;
+  padding-left: 102px;
+
+  @include mq("md") {
+    padding-left: 28px;
+  }
+}
+
+.p-header__logo {
+display: flex;
+align-items: center;
+gap: 20px;
+}
+
+.p-header__logo-img {
+  max-width:136px;
+
+ img {
+  width: 100%;
+ }
+}
+
+.p-header__logo-text {
+color: #FFF;
+font-family: "Noto Sans JP";
+font-size: 16px;
+font-weight: 500;
+letter-spacing: 1.6px;
+white-space: nowrap;
+
+&:hover {
+  color: #46D3D3;
+}
+}
+
+.p-header__nav {
+  display: flex;
+  align-items: center;
+  height: inherit;
+  justify-content: flex-start;
+  margin-left: 66px;
+
+  @include mq("lg2") {
+    display: none;
+  }
+}
+
+.p-header__list {
+  display: flex;
+  align-items: center;
+  gap: 42px;
+}
+
+.p-header__list-item {
+  color:$white;
+  font-family: $base-font-family;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1.6px;
+  white-space: nowrap;
+
+  a {
+    &:hover {
+      color: #46D3D3;
+    }
+  }
+}
+
+
+

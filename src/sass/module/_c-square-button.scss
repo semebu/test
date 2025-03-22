@@ -1,0 +1,40 @@
+@use "global" as *;
+
+.c-square-button {
+    padding-block: 24px;
+    padding-inline: 107px;
+    color: #FFF;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1.6px;
+    background:linear-gradient(90deg, #3C577B 3.64%, #449D85 50%, #53B9DE 96.36%);
+     background-color: #3C577B;
+    text-transform: uppercase;
+    transition: background linear-gradient(180deg, #2DB6FF 0%, #238DC5 37%, hsl(201, 70%, 35%) 100%) ease 0.3s,
+                color ease 0.3s; // フワッと変化させるためのトランジションを追加
+    position: relative;
+
+    &::after {
+       content: "";
+        position: absolute;
+        top: 50%;
+        right: 68px;
+        transform: translateY(-50%);
+        width: 22px;
+        height: 10px;
+        background-image: url(../../images/common/button-arrow.svg);
+        background-repeat: no-repeat;
+        transition: right background-color 0.3s ease;
+    }
+
+    &:hover {
+        background:linear-gradient(180deg, #2DB6FF 0%, #238DC5 37%, hsl(201, 70%, 35%) 100%);
+   
+    &::after {
+        background-image: url(../../images/common/button-arrow.svg);
+        background-repeat: no-repeat;
+       right: 3px;
+    }
+}
+}

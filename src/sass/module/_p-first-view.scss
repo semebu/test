@@ -1,0 +1,118 @@
+@use "global" as *;
+
+.p-first-view {
+  position: relative;
+  top: 64px;
+  left: 0;
+  background-image: url(../images/common/first-view-background.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  // height: 824px;
+  width: 100%;
+  aspect-ratio: 1440 / 897;
+}
+
+.p-first-view__background-image {
+  // position: relative;
+  // opacity: 0.5;
+  // background: linear-gradient(90deg, #3C577B 3.64%, #449D85 50%, rgba(83, 185, 222, 0.00) 96.36%);
+
+  // position: absolute;
+  // top: 0;
+  // left: 0;
+  // width: 100%;
+  // height: calc(100% - 64px);
+
+  img {
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.p-first-view__inner {
+  // position: relative;
+  // top: 0;
+  // left: 0;
+}
+
+.p-first-view__text-wrapper {
+  // margin-top: 57px;
+  position: absolute;
+  top: 55px;
+  left: 81px;
+}
+
+.p-first-view__title {
+  color: $white;
+  text-shadow: 0px 8px 8px rgba(0, 0, 0, 0.50);
+  font-family: $second-font-family;
+  font-size: 80px;
+  font-style: italic;
+  font-weight: 700;
+  letter-spacing: 8px;
+  line-height: 1.2;
+
+  @include mq("lg") {
+    color: #FFF;
+    text-shadow: 0px 8px 8px rgba(0, 0, 0, 0.50);
+    font-family: Lato;
+    font-size: 32px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 3.2px;
+  }
+}
+
+.p-first-view__text {
+  margin-top: 16px;
+  color: $white;
+  text-shadow: 0px 8px 8px rgba(0, 0, 0, 0.50);
+  font-family: $base-font-family;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 2.4px;
+
+  @include mq("lg") {
+    color: #FFF;
+    text-shadow: 0px 8px 8px rgba(0, 0, 0, 0.50);
+    /* pc/menu-fuctionname */
+    font-family: "Noto Sans JP";
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1.6px;
+  }
+}
+
+.l-first-view-btn-wrapper {
+display: inline-block;
+}
+
+.p-first-view__image {
+  position: absolute;
+  z-index: 100;
+  right:-111px;
+  bottom:77px;
+  // width: 100%;
+  z-index: 10;
+  overflow-x: hidden;
+  // height: 100%;
+  img {
+    aspect-ratio: 1375 / 824;
+    object-fit: cover;
+  }
+
+  @include mq("lg2") {
+    right: -329px;
+  }
+
+  @include mq("lg") {
+    right: -150px;
+  }
+
+  @include mq("md") {
+    right: 0;
+    bottom: 0;
+}
+}

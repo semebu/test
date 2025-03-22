@@ -1,0 +1,36 @@
+body {
+  font-family: "Noto Sans JP";
+}
+
+.u-desktop {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .u-desktop {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .u-mobile {
+    display: none;
+  }
+}
+
+.p-about-first-view {
+  position: relative;
+  top: 64px;
+  left: 0;
+  background-image: url(../images/common/about-fv-background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  aspect-ratio: 1440/551;
+}
+
+.p-about-first-view__inner {
+  max-width: 1236px;
+  padding-inline: 40px;
+  margin-inline: auto;
+}
+/*# sourceMappingURL=p-about-first-view.css.map */

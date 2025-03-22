@@ -1,0 +1,31 @@
+@use "global" as *;
+
+.l-scroll-btn-wrapper {
+  position: absolute;
+  bottom: 113px;
+  right: 73px;
+  // width: 120px;
+  // height: 120px;
+  z-index: 100;
+
+  @include mq("lg") {
+    bottom: 147px;
+    right: 217px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 18px;
+    height: 35.5px;
+    background-image: url(../images/common/under-arrow.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+

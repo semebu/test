@@ -1,0 +1,33 @@
+@use "global" as *;
+
+.l-pagetop-btn-wrapper {
+  display: inline-block;
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  z-index: 10;
+  margin-top: 0;
+
+   &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 18px;
+        height: 35.5px;
+        background-image: url(../images/common/under-arrow.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        // animation: down-arrow 4s linear infinite;
+    // @keyframes down-arrow {
+    //     0% {
+    //         transform:rotate(360deg);
+    //     }
+    //     100% {
+    //         transform:rotate(0deg);
+    //     }
+    // }
+    }
+}

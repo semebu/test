@@ -1,0 +1,25 @@
+@use "global" as *;
+
+.c-subpage-section-header {
+  color: $white;
+  position: absolute;
+  bottom: 43px;
+  left: 102px;
+}
+
+.c-subpage-section-header__subtitle {
+  color: $white;
+  font-family: $base-font-family;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 2.4px;
+}
+
+.c-subpage-section-header__title {
+  color: $white;
+  font-family: "Lato";
+  font-size: 80px;
+  font-style: italic;
+  font-weight: 700;
+  letter-spacing: 8px;
+}

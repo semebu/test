@@ -1,0 +1,105 @@
+@use "global" as *;
+
+.p-aboutWork {
+  background-image: url(../images/common/aboutourwork-factory-building.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-block: 93px 128px;
+   padding-inline: 66px;
+}
+
+.p-aboutWork__inner {
+  border: 0px solid $white;
+  background: rgba(255, 255, 255, 0.50);
+  max-width: 1120px;
+  margin-inline: auto;
+  padding-block: 24px 77px;
+  padding-inline: 18px;
+}
+
+.p-aboutWork__text-wrapper {
+
+}
+
+.p-aboutWork__cards {
+  margin-top: 30px;
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+
+  @include mq("lg") {
+    margin-top: 65px;
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+
+.p-aboutWork__card {
+  display: flex;
+  overflow: hidden;
+  // box-shadow: 0px 4px 4px 0px rgba(38, 38, 38, 0.25);
+
+  @include mq("lg") {
+    justify-content: center;
+  }
+
+  &:hover {
+    .p-aboutWork__card-image {
+      transform: scale(1.1);
+    }
+    .p-aboutWork__card-text-wrapper {
+      &::before {
+        background-image: url(../../images/common/aboutourwork-button2.svg);
+      }
+    }
+  }
+}
+
+.p-aboutWork__card + .p-aboutWork__card {
+  @include mq(md) {
+    margin-top: 65.5px;
+  }
+}
+
+.p-aboutWork__card-image {
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0px 0px 4px 0px rgba(38, 38, 38, 0.25);
+}
+
+.p-aboutWork__card-text-wrapper {
+  width: 254px;//477px - 223px
+  background: #F7F7F7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: 0px 4px 4px 0px rgba(38, 38, 38, 0.25);
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url(../../images/common/aboutourwork-button.svg);
+    width: 50px;
+    height: 50px;
+    bottom: 30.75px;
+    right: 52px;
+
+    &:hover {
+      background-image: url(../../images/common/aboutourwork-button2.svg);
+    }
+  }
+}
+
+.p-aboutWork__card-text {
+  color: $black;
+  text-align: center;
+  font-family: $base-font-family;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1.6px;
+  margin-bottom: 21px;
+  
+}
+

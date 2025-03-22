@@ -1,0 +1,116 @@
+@use "global" as *;
+
+// * {
+//   outline: 2px solid red;
+// }
+.p-about {
+  background-image: url(../images/common/about-pc.png);
+  background-repeat: no-repeat;
+  background-position: top 0 right 0;
+  background-size: cover;
+  // background-repeat: no-repeat;
+  // background-position: center;
+  // background-size: cover;
+  position: relative;
+  z-index: 100;
+  margin-top: -12px;
+
+  @include mq("lg") {
+    background-image: url(../images/common/about-sp.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+.p-about__inner {
+ display: flex;
+ flex-direction: row;
+ position: relative;
+  padding-inline: 161px;
+
+  @include mq("lg") {
+    display:inline;
+  }
+}
+
+.p-about__content {
+
+}
+
+.p-about__text-wrapper {
+  margin-top: 140px;
+  margin-bottom: 163px;
+  // width: calc(442px / 1440px * 100%);
+  width: 100%;
+  text-align: center;
+  font-family: $base-font-family;
+  color: $white;
+  position: relative;
+  z-index: 100;
+}
+
+.p-about__title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 50px; /* 208.333% */
+  // color: #FFF;
+  // font-family: $font-family-base;
+  // font-size: 24px;
+  // font-weight: 700;
+  // line-height: 50px; /* 208.333% */
+}
+
+.p-about__texts {
+  margin-top: 52px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 32px; /* 200% */
+  // text-align: center;
+  // font-size: 16px;
+  // font-weight: 500;
+  // line-height: 32px; /* 200% */
+}
+
+.p-about__text {
+}
+
+.p-about__text:nth-child(n+2) {
+  margin-top: 40px;
+}
+
+.p-about__image {
+  position: absolute;
+  width: 954px;
+  // height: 954px;
+  top: -59px;
+  right: 0;
+  overflow: hidden;
+  // transform: rotate(-3.973deg);
+  // filter: blur(2px);
+
+  @include mq("lg") {
+    position: static;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &::before {
+    content: "";
+    background-image: url(../../images/common/speech-bubble.svg);
+    position: absolute;
+    top: 122px;
+    left: 481px;
+    width: 126.668px;
+    height: 147.037px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 100;
+  }
+}
+

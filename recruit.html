@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+  <!-- meta情報 -->
+  <title>Opticos</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <!-- ogp -->
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:site_name" content="" />
+  <meta property="og:description" content="" />
+  <!-- ファビコン -->
+  <link rel="”icon”" href="" />
+  <!-- グーグルフォント -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+  <!-- css -->
+  <link rel="stylesheet" href="./css/lib/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <!-- JavaScript -->
+   <script src="./js/lib/swiper-bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script defer src="./js/script.js"></script>
+</head>
+
+<body>
+  <!-- ヘッダー -->
+  <header class="p-header l-header">
+    <div class="p-header__inner">
+      <div class="l-header__left-wrapper">
+        <a href="" class="p-header__logo">
+        <img class="p-header__logo-img" src="src/images/common/header-logo.svg" width="136" height="33" alt="ヘッダーロゴ">
+        <p class="p-header__logo-text">川崎工場</p>
+      </a>
+      <div class="p-header__nav">
+        <ul class="p-header__list">
+          <li class="p-header__list-item"><a href="">仕事について</a></li>
+          <li class="p-header__list-item"><a href="">募集要項</a></li>
+          <li class="p-header__list-item"><a href="">先輩たちのインタビュー</a></li>
+        </ul>
+        </div>
+      </div>
+      <div class="l-header__right-wrapper">
+        <div class="l-entry-btn">
+          <a href="#" class="c-square-button">entry</a>
+        </div>
+        <div class="p-header__drawer-wrapper">
+          <button id="js-drawer-icon" class="p-header__drawer c-drawer-icon header--open">
+            <span class="c-drawer-icon__bar"></span>
+            <span class="c-drawer-icon__bar"></span>
+            <span class="c-drawer-icon__bar"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ファーストビュー -->
+  <section class="p-first-view">
+    <div class="p-first-view__inner">
+      <picture class="p-first-view__background-image">
+      <source media="(min-width: 768px)" srcset="src/images/common/first-view-background.png">
+      <img src="src/images/common/first-view-background-sp.png" alt="ファーストビュー背景画像" width="376" height="568">
+      </picture>
+      <div class="p-first-view__text-wrapper">
+        <h2 class="p-first-view__title">
+          Photographing<br>
+          the future with<br>
+          technology.
+        </h2>
+        <p class="p-first-view__text">
+          技術で、未来を写す。
+        </p>
+        <div class="l-first-view-btn-wrapper">
+          <a href="#" class="c-round-button">募集要項を見る</a>
+        </div>
+      </div>
+      <div class="p-first-view__image">
+        <!-- <img src="src/images/common/first-view-person.png" alt="ファーストビューの女性画像" width="1375" height="879"> -->
+      <picture>
+      <source media="(min-width: 500px)" srcset="src/images/common/first-view-person.png" width="1375" height="879">
+      <img src="src/images/common/first-view-person-sp.png" alt="ファーストビュー背景画像" width="376" height="388">
+      </picture>
+      </div>
+      <!-- <div class="l-first-view-decoration-wave">
+          <img src="src/images/common/first-view-decoration-wave.svg" alt="ファーストビューのデコレーションウェーブ" width="1558" height="620">
+      </div> -->
+      <!-- <div class="l-first-view-decoration-star1">
+        <img src="src/images/common/star1.png" alt="ファーストビューのデコレーションスター1" width="345" height="134">
+      </div> -->
+      <!-- <div class="l-first-view-decoration-star2">
+        <img src="src/images/common/star2.png" alt="ファーストビューのデコレーションスター2" width="288" height="112">
+      </div> -->
+      <!-- <div class="l-first-view-decoration-star3">
+        <img src="src/images/common/star3.png" alt="ファーストビューのデコレーションスター3" width="78" height="78">
+      </div> -->
+      <!-- <div class="l-first-view-decoration-star4">
+        <img src="src/images/common/star4.png" alt="ファーストビューのデコレーションスター4" width="49" height="98">
+      </div> -->
+      <!-- <div class="l-first-view-decoration-star5">
+        <img src="src/images/common/star5.png" alt="ファーストビューのデコレーションスター5" width="126" height="128">
+      </div> -->
+    </div>
+    <!-- スクロール表示 -->
+    <div class="l-scroll-btn-wrapper">
+      <div class="c-scroll-btn">
+        <img src="images/common/scroll-top.svg" alt="スクロール表示">
+      </div>
+    </div>
+  </section>
+
+  <!-- <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br><br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br><br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br><br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br><br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br> -->
+  <!-- about -->
+  <div class="p-about" id="about">
+    <div class="p-about__inner">
+      <div class="p-about__contet">
+        <div class="p-about__text-wrapper">
+              <h3 class="p-about__title">光学技術で未来を拓く、<br>
+              オプティコスの挑戦</h3>
+              <p class="p-about__texts">
+                <div class="p-about__text">
+                  Opticosは、光技術の力を最大限に活用し、<br>
+                  次世代の可能性を切り拓く企業です。
+                </div>
+                <div class="p-about__text">
+                  私たちは、光を操り精密な技術を大切にして、<br>
+                  未来を創造することを使命としています。
+                </div>
+                <div class="p-about__text">
+                  量子コンピュータの暗号化や光システムの開発、<br>
+                  安全で効率的なネットワーク環境を構築し、<br>
+                  社会信頼と安心をお届けします。
+                </div>
+                <div class="p-about__text">
+                  私たちの技術は、ツールではなく、新しい未来を描くための<br>基盤です。精密な「技術」と「革新性」を追求しながら、<br>
+                  地球規模の課題に挑戦、次世代へと続く新たな価値を<br>
+                  提供していきます。
+                </div>
+                <div class="p-about__text">
+                  Opticosは、光の未来を見据え、技術で世界を照らします。
+                </div>
+              </p>
+        </div>
+        <div class="p-about__image">
+          <!-- <img src="src/images/common/earth.png" alt="地球の画像" width="954" height="954"> -->
+            <picture>
+            <source media="(min-width: 1024px)" srcset="src/images/common/earth.png">
+            <img src="src/images/common/earth-sp.png" alt="ファーストビュー背景画像">
+            </picture>
+        </div>
+      </div>
+        <!-- <div class="l-about-decoration-star1">
+          <img src="src/images/common/star1.png" alt="aboutのデコレーションスター1" width="345" height="134">
+        </div>
+        <div class="l-about-decoration-star2">
+          <img src="src/images/common/star1.png" alt="aboutのデコレーションスター2" width="345" height="134">
+        </div>
+        <div class="l-about-decoration-star3">
+          <img src="src/images/common/star6.png" alt="aboutのデコレーションスター3" width="60" height="119">
+        </div> -->
+    </div>
+  </div>
+  <!-- aboutSlide -->
+  <div class="card">
+    <div class="card__swiper-container">
+      <div class="swiper card__swiper --swiper1">
+        <div class="swiper-wrapper card__swiper-wrapper">
+          <div class="swiper-slide card__swiper-slide">
+            <img src="src/images/common/swiper-image-person.jpg" alt="カード画像1" width="290" height="175">
+          </div>
+          <div class="swiper-slide card__swiper-slide">
+            <img src="src/images/common/swiper-image-camera.jpg" alt="カード画像1" width="290" height="175">
+          </div>
+          <div class="swiper-slide card__swiper-slide">
+            <img src="src/images/common/swiper-image-factory.jpg" alt="カード画像1" width="290" height="175">
+          </div>
+          <div class="swiper-slide card__swiper-slide">
+            <img src="src/images/common/swiper-image-menber.jpg" alt="カード画像1" width="290" height="175">
+          </div>
+          <div class="swiper-slide card__swiper-slide">
+            <img src="src/images/common/swiper-image-menber.jpg" alt="カード画像1" width="290" height="175">
+          </div>
+          <div class="swiper-slide card__swiper-slide">
+            <img src="src/images/common/swiper-image-person.jpg" alt="カード画像1" width="290" height="175">
+          </div>
+          <div class="swiper-slide card__swiper-slide">
+            <img src="src/images/common/swiper-image-camera.jpg" alt="カード画像1" width="290" height="175">
+          </div>
+          <div class="swiper-slide card__swiper-slide">
+            <img src="src/images/common/swiper-image-factory.jpg" alt="カード画像1" width="290" height="175">
+          </div>
+          <div class="swiper-slide card__swiper-slide">
+            <img src="src/images/common/swiper-image-menber.jpg" alt="カード画像1" width="290" height="175">
+          </div>
+          <div class="swiper-slide card__swiper-slide">
+            <img src="src/images/common/swiper-image-menber.jpg" alt="カード画像1" width="290" height="175">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- messageセクション -->
+   <section class="p-message" id="message">
+    <div class="p-message__inner">
+      <div class="p-message__text-wrapper">
+         <div class="c-section-header">
+          <div class="c-section-header__engtitle-wrapper">
+            <h2 class="c-section-header__engtitle c-section-header__engtitle--gradation">Message</h2>
+          </div>
+          <p class="c-section-header__jatitle c-section-header__jatitle--gradation">代表メッセージ</p>
+          </div>
+          <div class="p-message__texts">
+            <p class="p-message__text">
+              当社は<span class="text-bold">「技術で未来を描く」</span>というビジョンのもと、光学技術を基盤に次世代を切り拓く製品を提供しています。
+            </p>
+            <p class="p-message__text">
+              技術革新が加速する現代において、製造業、医療、エンターテインメントなど多岐にわたる分野で、光学技術が生み出す無限の可能性を追求し、社会に貢献することを使命としています。
+            </p>
+            <p class="p-message__text">
+              <span class="text-bold">私たちは、社員一人ひとりが主体的に考え、行動できる環境づくりを大切にしています。</span>
+              個々の成長が会社全体の成長へとつながる仕組みを構築し、挑戦を恐れず、新しい価値を創造していくことを目指しています。
+            </p>
+            <p class="p-message__text">
+              未来を見据え、最先端の技術と柔軟な発想で進化し続けるOpticosは、これからも社会とともに輝く未来を築いてまいります。私たちの挑戦にぜひご期待ください。
+            </p>
+          </div>
+      </div>
+      <div class="p-message__image">
+        <img src="src/images/common/president-photo.jpg" alt="田中太郎社長の画像" width="489" height="660">
+        <div class="p-message__position-name">代表取締役 社長（CEO）</div>
+        <div class="p-message__president-name">田中 太郎  <span>Taro Tanaka</span></div>
+      </div>
+    </div>
+   </section>
+   <!-- about our work -->
+   <section class="p-aboutWork">
+    <div class="p-aboutWork__inner">
+      <div class="p-aboutWork__text-wrapper">
+        <div class="c-section-header">
+          <div class="c-section-header__engtitle-wrapper">
+            <h2 class="c-section-header__engtitle c-section-header__engtitle--gradation">About our work</h2>
+          </div>
+            <p class="c-section-header__jatitle c-section-header__jatitle--gradation">私たちの仕事について</p>
+        </div>
+        <div class="p-aboutWork__cards">
+          <div class="p-aboutWork__card">
+            <div class="p-aboutWork__card-image">
+              <img src="src/images/common/aboutourwork-camera.jpg" alt="job description card1" width="223" height="220">
+            </div>
+            <div class="p-aboutWork__card-text-wrapper">
+              <div class="p-aboutWork__card-text">
+                Opticos川崎工場の<br>
+                仕事について
+              </div>
+            </div>
+          </div>
+          <div class="p-aboutWork__card">
+            <div class="p-aboutWork__card-image">
+              <img src="src/images/common/aboutourwork-employee.jpg" alt="job description card1" width="223" height="220">
+            </div>
+            <div class="p-aboutWork__card-text-wrapper">
+              <div class="p-aboutWork__card-text">
+                先輩たちの
+                <br>
+                インタビュー
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   </section>
+
+   <!-- benefit -->
+   <section class="p-benefit l-benefit">
+    <div class="p-benefit__inner">
+      <div class="p-benefit__text-wrapper">
+        <div class="c-section-header">
+        <div class="c-section-header__engtitle-wrapper">
+          <h2 class="c-section-header__engtitle c-section-header__engtitle--gradation">Employee benefits</h2>
+        </div>
+            <p class="c-section-header__jatitle c-section-header__jatitle--gradation">福利厚生</p>
+        </div>
+        <div class="p-benefit__description">
+          <p class="p-benefit__description-text">
+          当社では、社員一人ひとりが安心して働ける環境を整えています。<br>
+          充実した福利厚生制度で、働く人のキャリアだけでなく、プライベートも大切にできる会社を目指しています。
+          </p>
+        </div>
+        <ul class="p-benefit__cards">
+          <li class="p-benefit__card c-benefit-card">
+            <div class="c-benefit-card__image">
+              <img src="src/images/common/benefit-home-icon.svg" alt="ホームアイコン" width="74" height="66">
+            </div>
+            <div class="c-benefit-card__text-area">
+              <h3 class="c-benefit-card__title">
+                <span class="c-benefit-card__title-number">
+                  01
+                </span>
+                <div class="c--benefit-card__title-text">
+                  <span>住宅手当・<br>結婚手当</span>の充実
+                </div>
+              </h3>
+              <p class="c-benefit-card__text">社員の生活を支えるため、住宅手当や結婚手当を完備。安心して長く働ける環境を整えています。</p>
+            </div>
+          </li>
+          <li class="p-benefit__card c-benefit-card">
+            <div class="c-benefit-card__image">
+              <img src="src/images/common/benefit-home-icon.svg" alt="ホームアイコン" width="74" height="66">
+            </div>
+            <div class="c-benefit-card__text-area">
+              <h3 class="c-benefit-card__title">
+                <div class="c-benefit-card__title-number">
+                  01
+                </div>
+                <div class="c--benefit-card__title-text">
+                  <span>住宅手当・<br>結婚手当</span>の充実
+                </div>
+              </h3>
+              <p class="c-benefit-card__text">社員の生活を支えるため、住宅手当や結婚手当を完備。安心して長く働ける環境を整えています。</p>
+            </div>
+          </li>
+          <li class="p-benefit__card c-benefit-card">
+            <div class="c-benefit-card__image">
+              <img src="src/images/common/benefit-home-icon.svg" alt="ホームアイコン" width="74" height="66">
+            </div>
+            <div class="c-benefit-card__text-area">
+              <h3 class="c-benefit-card__title">
+                <div class="c-benefit-card__title-number">
+                  01
+                </div>
+                <div class="c--benefit-card__title-text">
+                  <span>住宅手当・<br>結婚手当</span>の充実
+                </div>
+              </h3>
+              <p class="c-benefit-card__text">社員の生活を支えるため、住宅手当や結婚手当を完備。安心して長く働ける環境を整えています。</p>
+            </div>
+          </li>
+          <li class="p-benefit__card c-benefit-card">
+            <div class="c-benefit-card__image">
+              <img src="src/images/common/benefit-home-icon.svg" alt="ホームアイコン" width="74" height="66">
+            </div>
+            <div class="c-benefit-card__text-area">
+              <h3 class="c-benefit-card__title">
+                <div class="c-benefit-card__title-number">
+                  01
+                </div>
+                <div class="c--benefit-card__title-text">
+                  <span>住宅手当・<br>結婚手当</span>の充実
+                </div>
+              </h3>
+              <p class="c-benefit-card__text">社員の生活を支えるため、住宅手当や結婚手当を完備。安心して長く働ける環境を整えています。</p>
+            </div>
+          </li>
+          <li class="p-benefit__card c-benefit-card">
+            <div class="c-benefit-card__image">
+              <img src="src/images/common/benefit-home-icon.svg" alt="ホームアイコン" width="74" height="66">
+            </div>
+            <div class="c-benefit-card__text-area">
+              <h3 class="c-benefit-card__title">
+                <div class="c-benefit-card__title-number">
+                  01
+                </div>
+                <div class="c--benefit-card__title-text">
+                  <span>住宅手当・<br>結婚手当</span>の充実
+                </div>
+              </h3>
+              <p class="c-benefit-card__text">社員の生活を支えるため、住宅手当や結婚手当を完備。安心して長く働ける環境を整えています。</p>
+            </div>
+          </li>
+          <li class="p-benefit__card c-benefit-card">
+            <div class="c-benefit-card__image">
+              <img src="src/images/common/benefit-home-icon.svg" alt="ホームアイコン" width="74" height="66">
+            </div>
+            <div class="c-benefit-card__text-area">
+              <h3 class="c-benefit-card__title">
+                <div class="c-benefit-card__title-number">
+                  01
+                </div>
+                <div class="c--benefit-card__title-text">
+                  <span>住宅手当・<br>結婚手当</span>の充実
+                </div>
+              </h3>
+              <p class="c-benefit-card__text">社員の生活を支えるため、住宅手当や結婚手当を完備。安心して長く働ける環境を整えています。</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+   </section>
+
+   <!-- FAQ -->
+      <section class="p-faq" id="faq">
+        <div class="p-faq__inner">
+          <div class="c-section-header c-section-header__faq">
+             <div class="c-section-header__engtitle-wrapper c-section-header__engtitle-wrapper__faq">
+               <h2 class="c-section-header__engtitle c-section-header__engtitle__faq">FAQ</h2>
+             </div>
+            <p class="c-section-header__jatitle c-section-header__jatitle__faq">よくある質問</p>
+          </div>
+          <div class="p-faq__boxes">
+            <div class="p-faq__box c-faq-box is-open">
+              <button type="button" class="c-faq-box__heading js-accordion is-open">
+                <span class="c-faq-box__heading-icon">Q</span>
+                <span class="c-faq-box__heading-text">未経験でも応募可能ですか？</span>
+                <span class="c-faq-box__heading-toggle"></span>
+              </button>
+              <div class="c-faq-box__body" style="display: block">
+                <div class="c-faq-box__answer">
+                  <span class="c-faq-box__answer-icon">A</span>
+                  <span class="c-faq-box__answer-text">はい、未経験の方でも大歓迎です。研修制度やOJTを通じて、一から技術や知識を学んでいただける
+環境を整えていますので、安心してご応募ください。</span>
+                </div>
+              </div>
+            </div>
+            <div class="p-faq__box c-faq-box">
+              <button type="button" class="c-faq-box__heading js-accordion">
+                <span class="c-faq-box__heading-icon">Q</span>
+                <span class="c-faq-box__heading-text">選考プロセスについて教えてください。</span>
+                <span class="c-faq-box__heading-toggle"></span>
+              </button>
+              <div class="c-faq-box__body">
+                <div class="c-faq-box__answer">
+                  <span class="c-faq-box__answer-icon">A</span>
+                  <span class="c-faq-box__answer-text">書類選考→一次面接→最終面接の順で進みます。全体のプロセスは約2～3週間程度を予定しています。
+詳細は選考が進む際にお知らせします。</span>
+                </div>
+              </div>
+            </div>
+            <div class="p-faq__box c-faq-box">
+              <button type="button" class="c-faq-box__heading js-accordion">
+                <span class="c-faq-box__heading-icon">Q</span>
+                <span class="c-faq-box__heading-text">福利厚生にはどのようなものがありますか？</span>
+                <span class="c-faq-box__heading-toggle"></span>
+              </button>
+              <div class="c-faq-box__body">
+                <div class="c-faq-box__answer">
+                  <span class="c-faq-box__answer-icon">A</span>
+                  <span class="c-faq-box__answer-text">社会保険完備、通勤手当、家賃補助制度、資格取得支援制度、社員食堂の利用、定期健康診断など、
+                    さまざまな福利厚生をご用意しています。</span>
+                </div>
+              </div>
+            </div>
+            <div class="p-faq__box c-faq-box">
+              <button type="button" class="c-faq-box__heading js-accordion">
+                <span class="c-faq-box__heading-icon">Q</span>
+                <span class="c-faq-box__heading-text">働く環境について教えてください。</span>
+                <span class="c-faq-box__heading-toggle"></span>
+              </button>
+              <div class="c-faq-box__body">
+                <div class="c-faq-box__answer">
+                  <span class="c-faq-box__answer-icon">A</span>
+                  <span class="c-faq-box__answer-text">明るく活気のある職場で、社員同士のコミュニケーションが活発です。
+                    また、最新の設備が整った工場で、安心して働ける環境です。
+                    社員の意見を取り入れる風土があり、働きやすさにも配慮しています。</span>
+                </div>
+              </div>
+            </div>
+            <div class="p-faq__box c-faq-box">
+              <button type="button" class="c-faq-box__heading js-accordion">
+                <span class="c-faq-box__heading-icon">Q</span>
+                <span class="c-faq-box__heading-text">勤務地の希望は考慮されますか？</span>
+                <span class="c-faq-box__heading-toggle"></span>
+              </button>
+              <div class="c-faq-box__body">
+                <div class="c-faq-box__answer">
+                  <span class="c-faq-box__answer-icon">A</span>
+                  <span class="c-faq-box__answer-text">はい、可能な限りご希望を考慮します。
+                    ただし、業務の状況により異なる場合がありますので、面接時に詳しくご相談ください。</span>
+                </div>
+              </div>
+            </div>
+            <div class="p-faq__box c-faq-box">
+              <button type="button" class="c-faq-box__heading js-accordion">
+                <span class="c-faq-box__heading-icon">Q</span>
+                <span class="c-faq-box__heading-text">勤務時間や残業について教えてください。</span>
+                <span class="c-faq-box__heading-toggle"></span>
+              </button>
+              <div class="c-faq-box__body">
+                <div class="c-faq-box__answer">
+                  <span class="c-faq-box__answer-icon">A</span>
+                  <span class="c-faq-box__answer-text">基本的な勤務時間は9:00～18:00（休憩1時間）です。
+残業は月平均10～20時間程度で、ワークライフバランスを大切にしています。</span>
+                </div>
+              </div>
+            </div>
+            <div class="p-faq__box c-faq-box">
+              <button type="button" class="c-faq-box__heading js-accordion">
+                <span class="c-faq-box__heading-icon">Q</span>
+                <span class="c-faq-box__heading-text">どのような人材を求めていますか？</span>
+                <span class="c-faq-box__heading-toggle"></span>
+              </button>
+              <div class="c-faq-box__body">
+                <div class="c-faq-box__answer">
+                  <span class="c-faq-box__answer-icon">A</span>
+                  <span class="c-faq-box__answer-text">自ら考え行動し、チームで成果を生み出せる方を求めています。
+                    未経験でも、学ぶ意欲とチャレンジ精神がある方を歓迎します！</span>
+                </div>
+              </div>
+            </div>
+            <div class="p-faq__box c-faq-box">
+              <button type="button" class="c-faq-box__heading js-accordion">
+                <span class="c-faq-box__heading-icon">Q</span>
+                <span class="c-faq-box__heading-text">社員の年齢層や男女比について教えてください。</span>
+                <span class="c-faq-box__heading-toggle"></span>
+              </button>
+              <div class="c-faq-box__body">
+                <div class="c-faq-box__answer">
+                  <span class="c-faq-box__answer-icon">A</span>
+                  <span class="c-faq-box__answer-text">社員の平均年齢は30代前半で、若手からベテランまで幅広く活躍しています。
+                    男女比は6:4で、女性社員も多く働きやすい環境です。</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+  <!-- CTAボタン -->
+   <div class="p-cta">
+    <div class="p-cta__inner">
+      <div class="p-cta__item">
+        <p class="p-cta__title">募集要項</p>
+        <p class="p-cta__content">社員の平均年齢は30代前半で、若手からベテランまで幅広く活躍しています。男女比は6:4で、女性社員も多く働きやすい環境です。</p>
+        <!-- ボタン -->
+         <div class="p-cta__button-wrapper">
+           <a href="#" class="c-round-button c-round-button--gray">クリック</a>
+         </div>
+      </div>
+      <div class="p-cta__item">
+        <p class="p-cta__title">エントリー</p>
+        <p class="p-cta__content">社員の平均年齢は30代前半で、若手からベテランまで幅広く活躍しています。男女比は6:4で、女性社員も多く働きやすい環境です。</p>
+        <!-- ボタン -->
+         <div class="p-cta__button-wrapper">
+           <a href="#" class="c-round-button c-round-button--gray">クリック</a>
+         </div>
+      </div>
+    </div>
+   </div>
+
+   <!-- contactセクション -->
+  <section class="p-contact">
+  <div class="p-contact__inner">
+   <!-- タイトル -->
+      <div class="c-section-header">
+        <div class="c-section-header__engtitle-wrapper">
+          <h2 class="c-section-header__engtitle c-section-header__engtitle--gradation">Contact</h2>
+        </div>
+        <p class="c-section-header__jatitle c-section-header__jatitle--gradation">お問い合わせ</p>
+      </div>
+      <!-- 説明 -->
+      <div class="p-contact__description">
+          <p class="p-contact__description-text">
+          下記の入力フォームに必要事項を入力のうえ、<br>
+          「入力内容を確認する」ボタンをクリックしてください
+          </p>
+      </div>
+      <!-- フォーム -->
+    <form action="" class="p-contact__form">
+      <!-- 名前 -->
+      <div class="p-contact__row">
+        <p class="p-contact__head"><span class="--must">お名前</span></p>
+        <div class="p-contact__data">
+          <input type="text" placeholder="山田 太郎">
+        </div>
+      </div>
+      <!-- ふりがな -->
+      <div class="p-contact__row">
+        <p class="p-contact__head"><span class="--must">ふりがな</span></p>
+        <div class="p-contact__data">
+          <input type="text" placeholder="やまだ　たろう">
+        </div>
+      </div>
+      <!-- 電話番号 -->
+      <div class="p-contact__row">
+        <p class="p-contact__head"><span class="--must">電話番号</span></p>
+        <div class="p-contact__data">
+          <input type="tel" placeholder="000-0000-0000">
+        </div>
+      </div>
+      <!-- 郵便番号 -->
+      <div class="p-contact__row">
+        <p class="p-contact__head">郵便番号</p>
+        <div class="p-contact__data">
+          <input type="text" placeholder="000-0000">
+        </div>
+      </div>
+      <!-- 住所 -->
+       <div class="p-contact__row">
+        <p class="p-contact__head">住所</p>
+        <div class="p-contact__data">
+          <input type="text" placeholder="東京都千代田区永田町1-7-1">
+        </div>
+      </div>
+      <!-- お問い合わせ種別 -->
+        <div class="p-contact__row">
+        <p class="p-contact__head"><span class="--must
+          ">お問い合わせ種別</span></p>
+        <div class="p-contact__data">
+          <input type="text" placeholder="">
+        </div>
+      </div>
+      <!-- お問い合わせ内容 -->
+      <div class="p-contact__row --aifs">
+        <p class="p-contact__head"><span class="--must">お問い合わせ内容</span></p>
+        <div class="p-contact__data">
+          <textarea name="message"></textarea>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="p-contact__acceptance-wrapper">
+    <!-- プライバシーポリシー -->
+      <div class="p-contact__acceptance p-contact__data-checkbox">
+        <label for="acceptance">
+          <h2 class="p-contact__acceptance-title">個人情報の取り扱いについて</h2>
+          <input type="checkbox" id="acceptance" name="checkbox" value="acceptance">
+          <span>個人情報の取扱規定に同意する（必須）</span>
+        </label>
+        <p class="p-contact__acceptance-text">個人情報の取り扱いにつきましては、<a href="">当社のプライバシーポリシー</a>をご参照ください。</p>
+      </div>
+      <!-- 送信ボタン -->
+      <div class="p-contact__submit l-contact__submit">
+        <input type="submit" value="送信">
+      </div>
+  </div>
+      
+  </section>
+
+  <!-- footer -->
+  <footer class="p-footer">
+    <div class="p-footer__inner">
+        <a href="" class="p-header__logo">
+        <img class="p-header__logo-img" src="src/images/common/header-logo.svg" width="136" height="33" alt="ヘッダーロゴ">
+        <p class="p-header__logo-text">川崎工場</p>
+      </a>
+        <ul class="l-footer__nav p-footer-nav">
+          <!-- トップ -->
+           <li class="p-footer-nav__item">
+            トップ
+            <ul class="p-footer-subItem p-footer-subav">
+              <li class="p-footer-subNav__item">
+              <a href="#about">Opticosとは</a>
+              </li>
+              <li class="p-footer-subNav__item">
+              <a href="#message">代表メッセージ</a>
+              </li>
+              <li class="p-footer-subNav__item">
+              <a href="#aboutWork">私たちの仕事について</a>
+              </li>
+              <li class="p-footer-subNav__item">
+              <a href="#faq">よくある質問</a>
+            </li>
+            </ul>
+           </li>
+          <!-- 仕事について -->
+           <li class="p-footer-nav__item">
+            仕事について
+            <ul class="p-footer-subItem p-footer-subav">
+              <li class="p-footer-subNav__item">
+              <a href="">川崎工場とは</a>
+              </li>
+              <li class="p-footer-subNav__item">
+              <a href="">仕事の流れ</a>
+              </li>
+              <li class="p-footer-subNav__item">
+              <a href="">私たちが大事にしていること</a>
+              </li>
+            </ul>
+           </li>
+          <!-- 先輩たちのインタビュー -->
+            <li class="p-footer-nav__item">
+            先輩たちのインタビュー
+            <ul class="p-footer-subItem p-footer-subav">
+              <li class="p-footer-subNav__item">
+              <a href="">Opticosとは</a>
+              </li>
+              <li class="p-footer-subNav__item">
+              <a href="">代表メッセージ</a>
+              </li>
+              <li class="p-footer-subNav__item">
+              <a href="">私たちの仕事について</a>
+              </li>
+              <li class="p-footer-subNav__item">
+              <a href="">よくある質問</a>
+              </li>
+            </ul>
+           </li>
+          <!-- 募集要項・エントリ -->
+             <li class="p-footer-nav__item">
+            募集要項・エントリー
+            <ul class="p-footer-subItem p-footer-subav">
+              <li class="p-footer-subNav__item"><a href="">募集職種</a></li>
+              <li class="p-footer-subNav__item"><a href="">応募の流れ</a></li>
+              <li class="p-footer-subNav__item"><a href="">エントリーフォーム</a></li>
+              <li class="p-footer-subNav__item"><a href="">プライバシーポリシー</a></li>
+            </ul>
+           </li>
+        </ul>
+    </div>
+  </footer>
+  <br>
+  <br>
+  <br>
+    <!-- セクションタイトル -->
+  <div class="c-section-header">
+     <div class="c-section-header__engtitle-wrapper">
+       <h2 class="c-section-header__engtitle c-section-header__engtitle--gradation">Message</h2>
+     </div>
+    <p class="c-section-header__jatitle c-section-header__jatitle--gradation">代表メッセージ</p>
+  </div>
+  <br>
+  <br>
+  <br>
+
+   <div class="c-section-header c-section-header__faq">
+             <div class="c-section-header__engtitle-wrapper c-section-header__engtitle-wrapper__faq">
+               <h2 class="c-section-header__engtitle c-section-header__engtitle__faq">FAQ</h2>
+             </div>
+            <p class="c-section-header__jatitle c-section-header__jatitle__faq">よくある質問</p>
+    </div>
+  <br>
+  <br>
+  <br>
+  <!-- 角丸ボタン -->
+  <a href="#" class="c-round-button">角丸ボタン</a>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <!-- 長方形ボタン -->
+  <a href="#" class="c-square-button">entry</a>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <!-- </div> -->
+
+<!-- FAQのコンポーネント -->
+            <div class="p-faq__box c-faq-box is-open">
+              <button type="button" class="c-faq-box__heading js-accordion is-open">
+                <span class="c-faq-box__heading-icon">Q</span>
+                <span class="c-faq-box__heading-text">ひとりで複数回投稿してもいいですか？</span>
+                <span class="c-faq-box__heading-toggle"></span>
+              </button>
+              <div class="c-faq-box__body" style="display: block">
+                <div class="c-faq-box__answer">
+                  <span class="c-faq-box__answer-icon">A</span>
+                  <span class="c-faq-box__answer-text">期間中であれば何度でも投稿可能ですが、当選は１回限りとなります。</span>
+                </div>
+              </div>
+            </div>
+</body>
+
+</html>

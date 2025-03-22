@@ -1,0 +1,83 @@
+@use "global" as *;
+
+.p-cta {
+  background:#262626 url(../images/common/layer-rough.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.p-cta__inner {
+  display: grid;
+  grid-template-columns:repeat(2,1fr);
+
+  @include mq(md) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.p-cta__item + .p-cta__item {
+  border-left: 1px solid $white;
+}
+
+.p-cta__item {
+  padding: 100px;
+
+  @include mq(lg) {
+    padding: 62px 30px 35px 30px;
+  }
+}
+
+.p-cta__title {
+  color: $white;
+  text-align: center;
+  /* pc/h5-ja */
+  font-family: $base-font-family;
+  font-size: 52px;
+  font-weight: 700;
+
+@include mq(lg) {
+  color: #FFF;
+text-align: center;
+
+/* h5-title-en */
+font-family: Lato;
+font-size: 32px;
+font-style: italic;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 3.2px;
+}
+}
+
+.p-cta__content {
+  margin-top: 72px;
+  color: $white;
+  font-family: $base-font-family;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 32px; /* 200% */
+
+  @include mq(lg) {
+    margin-top: 32px;
+    color: #FFF;
+    font-family: "Noto Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px; /* 200% */
+}
+}
+.p-cta__button-wrapper {
+  margin-top: 50px;
+  text-align: center;
+
+  @include mq(lg) {
+    margin-top: 32px;
+  }
+}
+
+.c-round-button {
+
+}
+

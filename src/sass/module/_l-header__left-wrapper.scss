@@ -1,0 +1,8 @@
+@use "global" as *;
+
+.l-header__left-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 66px;
+}

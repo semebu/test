@@ -1,0 +1,11 @@
+@use "global" as *;
+
+.l-first-view-btn-wrapper {
+  margin-top: 32px;
+  position: relative;
+  z-index: 100;
+
+  @include mq("lg") {
+    margin-top: 22px;
+  }
+}

@@ -1,0 +1,145 @@
+@use "global" as *;
+
+.p-message {
+ background-color: $white;
+ padding-top: 184px;
+ padding-bottom: 133px;
+
+ @include mq(md) {
+  padding-top: 68px;
+  padding-bottom: 85px;
+ }
+}
+
+.p-message__inner {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 87px;
+  padding-left: 30px;
+  padding-right: 30px;
+  max-width: 1121px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include mq(md) {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+.p-message__text-wrapper {
+  max-width: 545px;
+}
+
+.c-section-header {
+
+}
+
+.c-section-header__engtitle {
+
+}
+
+.c-section-header__jatitle {
+
+}
+
+.p-message__texts {
+  margin-top: 27px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.p-message__text {
+
+}
+.p-message__text + .p-message__text {
+ margin-top: 30px;
+}
+
+.p-message__image {
+  margin-top: 8px;
+  aspect-ratio: 489 / 660;
+  position: relative;
+  border-radius: 152px 0px 0px 0px;
+  background: url(../images/common/president-image.png) lightgray -456.151px 0px / 203.769% 100% no-repeat;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  // &::before {
+  //   position: absolute;
+  //   content: "代表取締役 社長（CEO）";
+  //   width: 227px;
+  //   // height: 41px;
+  //   color: $white;
+  //   background: linear-gradient(90deg, #21487D 0%, #47576E 39%, #8C8C8C 76.5%);
+  //   bottom: 68px;
+  //   left: 0;
+  //   padding: 10px;
+    
+  // }
+
+  // &::after {
+  //   position: absolute;
+  //   content: "田中 太郎     Taro Tanaka";
+  //   width: 294px;
+  //   // height: 68px;
+  //   background-color: #262626;
+  //   bottom: 0;
+  //   left: 0;
+  //   color: $white;
+  //   padding: 23px;
+  //   font-family: $base-font-family;
+  //   // font-size: 32px;
+
+  // }
+}
+
+.p-message__position-name {
+  position: absolute;
+  bottom: 68px;
+  left: 0;
+  color: $white;
+text-align: center;
+font-family:$base-font-family;
+font-size: 16px;
+font-weight: 500;
+line-height: 50px; /* 312.5% */
+background: linear-gradient(90deg, #21487D 0%, #47576E 39%, #8C8C8C 76.5%);
+padding: 10px;
+width: 227px;
+}
+
+.p-message__president-name {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color:$white;
+text-align: center;
+font-family:$base-font-family;
+font-size: 32px;
+font-weight: 500;
+line-height: 50px; /* 156.25% */
+background: #262626;
+padding: 10px;
+width: 294px;
+
+span {
+  align-items: center;
+  color: #FFF;
+  text-align: center;
+  font-family: "Noto Sans JP";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 50px; /* 312.5% */
+  padding-left: 24px;
+}
+
+}
+
+

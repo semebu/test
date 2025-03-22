@@ -1,0 +1,80 @@
+@use "global" as *;
+
+
+.c-benefit-card {
+  display: flex;
+  gap: 40.5px;
+  border-radius: 15px 0px 0px 0px;
+  border: 2px solid var(--text-style, #DADADA);
+  background: #FFF;
+  padding: 20px 15px 35px 15px;
+  align-items: center;
+}
+
+.c-benefit-card__image {
+  width: calc(74px / 351px * 100%);
+  border-radius: 36px;
+  border: 0px solid #000;
+  background: $white;
+  // box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+img {
+  width: 100%;
+  height: 100%;
+}
+}
+
+.c-benefit-card__text-area {
+width: calc(192px / 351px * 100%);
+}
+
+
+.c-benefit-card__title {
+display: flex;
+flex-direction: column;
+}
+
+.c-benefit-card__title-number {
+  color: #262626;
+  font-family: "Noto Sans JP";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top:50%;
+    left: -19px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    // transform: rotate(-43.778deg);
+    background: url(../images/common/rectangle-icon.svg) no-repeat center center;
+}
+}
+
+
+.c--benefit-card__title-text {
+  margin-top: 10px;
+  color: #013366;
+  /* pc/mane-titlename-sub */
+  font-family: "Noto Sans JP";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 1.6px;
+}
+
+
+.c-benefit-card__text {
+  margin-top: 10px;
+  color: #262626;
+  font-family: "Noto Sans JP";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}

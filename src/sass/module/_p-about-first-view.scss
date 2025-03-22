@@ -1,0 +1,22 @@
+@use "global" as *;
+
+.p-about-first-view {
+  position: relative;
+  top: 64px;
+  left: 0;
+  background-image: url(../images/common/about-fv-background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  aspect-ratio: 1440/551;
+}
+
+.p-about-first-view__inner {
+max-width: 1236px;
+padding-inline: 40px;
+margin-inline: auto;
+}
+
+
+
+

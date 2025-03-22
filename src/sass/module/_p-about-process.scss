@@ -1,0 +1,72 @@
+@use "global" as *;
+
+.p-about-process {
+    background-color: $white;
+    padding: 118px;
+    padding-bottom: 176px;
+}
+
+.p-about-process__inner {
+}
+
+.p-about-process__wrapper {
+  display: flex;
+  gap: 59px;
+}
+
+.p-about-process__title {
+  font-size: 24px;
+  font-weight: 700;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: -40px;
+    top: 2px;
+    border-top: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+  }
+}
+
+.p-about-process__title--yellow {
+  background-color: #EDE73E;
+
+  &::after {
+    border-left: 20px solid #EDE73E;
+  }
+}
+
+.p-about-process__title--green {
+  color: #21B5CF;
+
+  &::after {
+    border-left: 20px solid #21B5CF;
+  }
+}
+
+.p-about-process__list {
+  padding-block: 50px 49px;
+  position: relative;
+
+   
+}
+
+
+
+
+.p-about-process__list--yellow {
+}
+
+.p-about-process__item {
+
+}
+
+.p-about-process__list--green {
+}
+
+.p-about-process__annotation {
+}
+
+
+
